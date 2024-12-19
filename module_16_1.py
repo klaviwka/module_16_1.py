@@ -7,7 +7,7 @@ app = FastAPI()
 # Маршрут для главной страницы
 @app.get("/", tags=["default"])
 async def Get_Main_Page():
-    return JSONResponse(content={"message": "Главная страница"})
+    return "Главная страница"
 
 # Маршрут для страницы администратора
 @app.get("/user/admin", tags=["default"])
